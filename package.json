@@ -1,0 +1,38 @@
+{
+  "name": "googlelogin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "googleapis": "^84.0.0",
+    "jasmine-node": "^3.0.0",
+    "nodemailer": "^6.6.3",
+    "promise": "^8.1.0",
+    "pug": "^3.0.2",
+    "q": "^1.5.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.17.4",
+    "@types/passport": "^1.0.7",
+    "@types/passport-google-oauth20": "^2.0.9",
+    "connect-mongo": "^4.4.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "midxdle <sina.heydarian.sh@gmail.com> (https://github.com/midxdle/fourthrepo.git)",
+  "license": "ISC"
+}
