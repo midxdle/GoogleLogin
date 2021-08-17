@@ -5,7 +5,7 @@ module.exports = {
     //if user is auth then redirect to the next page
     //else redirect to login page
     ensureAuth: function (req, res, next) {
-        if (req.isAuthenticated()) {
+        if(req.isAuthenticated()) {
             return next()
         } else {
             res.redirect('/')
@@ -15,7 +15,7 @@ module.exports = {
     //then redirect to home page
     //if not auth redirect to login page
     ensureGuest: function(req, res, next) {
-        if(req.isAuthenticated()) {
+        if(!req.isAuthenticated()) {
             return next();
         } else {
             res.redirect('/log');
