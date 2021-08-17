@@ -1,5 +1,5 @@
 //importing required modules
-const express = reuqire('express');
+const express = require('express');
 const passport = require('passport');
 const router = express.Router();
 //send to google do the authentication
