@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const passport = require('passport');
 const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+const MongoDbStore = require('connect-mongo');
 require('./config/passport')(passport);
 
 //connect to mongodb and set express template
@@ -27,7 +27,7 @@ app.use(
         secret: 'keyboard cat',
         resave: false,
         saveUninitialized: false,
-        store: new MongoStore({ mongooseConnection: mongoose.connection}),
+        store: MongoDbStore.create({ mongooseConnection: mongoose.connection}),
     })
 );
 
